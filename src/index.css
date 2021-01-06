@@ -375,6 +375,7 @@ a img.aligncenter {
   border-top-right-radius: 100%;
   transform-origin: left bottom;
   -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 .progress-br.float .progress__item:before {
   border-top-width: 2px;
@@ -400,6 +401,7 @@ a img.aligncenter {
   z-index: -1;
   transform-origin: left bottom;
   -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 .progress-br.shadow:after {
   content: '';
@@ -420,6 +422,7 @@ a img.aligncenter {
 .progress-br.done .progress__item {
   opacity: 0;
   -webkit-animation: done 3.1s;
+  animation: done 3.1s;
   transition: opacity 0.3s linear 3.1s;
 }
 .progress-br.done .progress__item:before {
@@ -431,6 +434,7 @@ a img.aligncenter {
 .progress-br.done:after {
   opacity: 0;
   -webkit-animation: done 3.1s;
+  animation: done 3.1s;
   transition: opacity 0.15s linear 3.1s;
 }
 
@@ -463,7 +467,41 @@ a img.aligncenter {
     transform: scale(1);
   }
 }
+@keyframes done {
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.07);
+  }
+  40% {
+    transform: scale(0.93);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  60% {
+    transform: scale(0.97);
+  }
+  80% {
+    transform: scale(1.01);
+  }
+  90% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -833,7 +871,7 @@ a img.aligncenter {
     overflow: hidden;
     position: relative;
     background-position: center center;
-    vertical-align: sub;
+    /* vertical-align: sub; */
     width: 100%;
     z-index: 2;
 }
@@ -1411,7 +1449,7 @@ a img.aligncenter {
     padding-bottom: 30px;
 }
 
-.pricing-table-sign-up a{}
+/* .pricing-table-sign-up a{} */
 .pricing-table-sign-up a{
 	position: relative;
 	padding: 13px 40px;
@@ -2380,7 +2418,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 0px !important;
 }
 
 .footer {
@@ -2963,7 +3001,7 @@ span.m_1 {
 }
 
 
-.pricingTable-sign-up a{}
+/* .pricingTable-sign-up a{} */
 .pricingTable-sign-up a{
 	position: relative;
 	padding: 13px 40px;
@@ -3029,9 +3067,9 @@ span.m_1 {
 	color: #121212;
 }
 
-.customer-box{
+/* .customer-box{
 	
-}
+} */
 .customer-box .nav-tabs{
 	border-bottom: none;
 	padding: 20px;
