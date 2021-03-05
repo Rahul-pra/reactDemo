@@ -1,16 +1,16 @@
 import React from 'react';
-  
-class Footer extends React.Component { 
 
-    render(){
+class Footer extends React.Component {
+
+    render() {
         return (
             <>
-                <footer class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="widget clearfix">
-                                    <div class="widget-title">
+                <footer className="footer">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4 col-md-4 col-xs-12">
+                                <div className="widget clearfix">
+                                    <div className="widget-title">
                                         <h3>About US</h3>
                                     </div>
                                     <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
@@ -18,12 +18,12 @@ class Footer extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="widget clearfix">
-                                    <div class="widget-title">
+                            <div className="col-lg-4 col-md-4 col-xs-12">
+                                <div className="widget clearfix">
+                                    <div className="widget-title">
                                         <h3>Information Link</h3>
                                     </div>
-                                    <ul class="footer-links">
+                                    <ul className="footer-links">
                                         <li><a href="/home">Home</a></li>
                                         <li><a href="/blog">Blog</a></li>
                                         <li><a href="/pricing">Pricing</a></li>
@@ -33,14 +33,14 @@ class Footer extends React.Component {
                                     </ul>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-4 col-md-4 col-xs-12">
-                                <div class="widget clearfix">
-                                    <div class="widget-title">
+
+                            <div className="col-lg-4 col-md-4 col-xs-12">
+                                <div className="widget clearfix">
+                                    <div className="widget-title">
                                         <h3>Contact Details</h3>
                                     </div>
 
-                                    <ul class="footer-links">
+                                    <ul className="footer-links">
                                         <li><a href="mailto:info@yopmail.com">info@yopmail.com</a></li>
                                         <li><a href="https://www.google.com/">www.google.com</a></li>
                                         <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
@@ -48,35 +48,35 @@ class Footer extends React.Component {
                                     </ul>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </footer>
 
-                <div class="copyrights">
-                    <div class="container">
-                        <div class="footer-distributed">
-                            <div class="footer-left">                   
-                                <p class="footer-company-name">All Rights Reserved. &copy; 2021 <a href="https://www.google.com/">QuickCloud</a> Design By : <a href="https://html.design/">html design</a></p>
+                <div className="copyrights">
+                    <div className="container">
+                        <div className="footer-distributed">
+                            <div className="footer-left">
+                                <p className="footer-company-name">All Rights Reserved. &copy; 2021 <a href="https://www.google.com/">QuickCloud</a> Design By : <a href="https://html.design/">html design</a></p>
                             </div>
 
-                            <div class="footer-right">
-                                <ul class="footer-links-soi">
-                                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                                    {/* <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li> */}
+                            <div className="footer-right">
+                                <ul className="footer-links-soi">
+                                    <li><a href="https://www.facebook.com/"><i className="fa fa-facebook"></i></a></li>
+                                    {/* <li><a href="#"><i className="fa fa-github"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-pinterest"></i></a></li> */}
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <a href="/home" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+                <a href="/home" id="scroll-to-top" className="dmtop global-radius"><i className="fa fa-angle-up"></i></a>
             </>
         );
-      }
-}   
-  
+    }
+}
+
 export default Footer;
