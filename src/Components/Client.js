@@ -1,5 +1,4 @@
 import React from 'react';
-import Testimonials from './Testimonials';
 
 class Client extends React.Component {
     render() {

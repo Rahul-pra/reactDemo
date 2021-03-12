@@ -22,14 +22,16 @@ class About extends React.Component {
                      <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div className="message-box">
                            <h4>2018 BEST WEB HOSTING COMPANY</h4>
-                           <h2>Awards Winner Support Center</h2>
+                           <h2> Awards Winner Support Center</h2>
+                           <div dangerouslySetInnerHTML={{
+                              __html: `
                            <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam
                             risus. Sed a tellus quis mi rhoncus dignissim.</p>
 
                            <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus
                            bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis
-                            montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
-
+                            montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>` }}>
+                           </div>
                            <a href="#" className="hover-btn-new"><span>Learn More</span></a>
                         </div>
                         {/* <!-- end messagebox --> */}
@@ -38,7 +40,7 @@ class About extends React.Component {
 
                      <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div className="post-media wow fadeIn">
-                           <img src="images/about_02.jpg" alt="" className="img-fluid img-rounded" />
+                           <img src="../images/about_02.jpg" alt="" className="img-fluid img-rounded" />
                         </div>
                         {/* <!-- end media --> */}
                      </div>
@@ -47,7 +49,7 @@ class About extends React.Component {
                   <div className="row align-items-center">
                      <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div className="post-media wow fadeIn">
-                           <img src="images/about_03.jpg" alt="" className="img-fluid img-rounded" />
+                           <img src="../images/about_03.jpg" alt="" className="img-fluid img-rounded" />
                         </div>
                         {/* <!-- end media --> */}
                      </div>
