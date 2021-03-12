@@ -21,7 +21,7 @@ class Home extends React.Component {
 
             <Domain />
 
-            <About />
+            <About isTitle={true} titleName={'About'} />
 
             <History />
 
