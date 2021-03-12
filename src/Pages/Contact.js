@@ -51,7 +51,7 @@ class Contact extends React.Component {
             let lastAtPos = fields["email"].lastIndexOf('@');
             let lastDotPos = fields["email"].lastIndexOf('.');
 
-            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') == -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
+            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') === -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
                 formIsValid = false;
                 errors["email"] = "Email is not valid";
             }
@@ -163,7 +163,7 @@ class Contact extends React.Component {
                             <div class="col-xl-6 col-md-12 col-sm-12">
                                 <div class="map-box">
                                     {/* <div id="custom-places" class="small-map"></div> */}
-                                    <iframe class="small-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1175&amp;height=522&amp;hl=en&amp;q=%20Collins%20Street%20West%20Victoria%20Australia+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=07b3097ad3ff79b249fe2fc225e0a41b77cb7ce0'></script>
+                                    <iframe class="small-map" title="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1175&amp;height=522&amp;hl=en&amp;q=%20Collins%20Street%20West%20Victoria%20Australia+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=07b3097ad3ff79b249fe2fc225e0a41b77cb7ce0'></script>
                                 </div>
                             </div>
                         </div>

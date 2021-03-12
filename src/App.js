@@ -14,6 +14,8 @@ import DedicatedHosting from "./Pages/DedicatedHosting";
 import PricingPage from "./Pages/PricingPage";
 import Contact from "./Pages/Contact";
 import DomainPage from "./Pages/DomainPage";
+import FaqPage from "./Pages/FaqPage";
+import BlogPage from "./Pages/BlogPage";
 
 
 class App extends Component {
@@ -36,6 +38,8 @@ class App extends Component {
           <Route path="/domain" component={DomainPage} />
           <Route path="/pricing" component={PricingPage} />
           <Route path="/contact" component={Contact} />
+          <Route path="/faq" component={FaqPage} />
+          <Route path="/blog" component={BlogPage} />
 
           <Footer />
           <Helmet>

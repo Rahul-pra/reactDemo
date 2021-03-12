@@ -7,13 +7,15 @@ class About extends React.Component {
          <>
             <div id="overviews" className="section lb">
                <div className="container">
-                  <div className="section-title row text-center">
-                     <div className="col-md-8 offset-md-2">
-                        <h3>About</h3>
-                        <p className="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                  {!!this.props.isTitle &&
+                     <div className="section-title row text-center">
+                        <div className="col-md-8 offset-md-2">
+                           <h3>{this.props.titleName}</h3>
+                           <p className="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                         lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                        </div>
                      </div>
-                  </div>
+                  }
                   {/* <!-- end title --> */}
 
                   <div className="row align-items-center">

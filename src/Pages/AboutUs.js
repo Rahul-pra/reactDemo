@@ -14,7 +14,7 @@ class AboutUs extends React.Component {
                 </Helmet>
                 <Banner title={'About Us'} discription={'About Us Lorem Ipsum Dolroin Gravida Nibh Vel Velit.'} />
 
-                <About />
+                <About isTitle={true} titleName={'About'} />
 
                 <Testimonials />
 
