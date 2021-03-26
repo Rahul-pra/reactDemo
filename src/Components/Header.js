@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import history from "../Helper/history";
 
 const loader = document.querySelector('#preloader');
 
@@ -81,8 +82,51 @@ class Header extends React.Component {
         this.setState({ activeLink: id });
     };
 
+    getActiveId(pathname) {
+        switch (pathname) {
+            case '/home':
+                this.setState({ activeLink: 1 });
+                break;
+            case '/about':
+                this.setState({ activeLink: 2 });
+                break;
+            case '/features':
+                this.setState({ activeLink: 3 });
+                break;
+            case '/web-hosting':
+                this.setState({ activeLink: 4 });
+                break;
+            case '/cloud-server':
+                this.setState({ activeLink: 4 });
+                break;
+            case '/dedicated-hosting':
+                this.setState({ activeLink: 4 });
+                break;
+            case '/domain':
+                this.setState({ activeLink: 8 });
+                break;
+            case '/pricing':
+                this.setState({ activeLink: 9 });
+                break;
+            case '/contact':
+                this.setState({ activeLink: 10 });
+                break;
+            default:
+                this.setState({ activeLink: 1 });
+        }
+    }
+
+    componentDidMount() {
+
+        let getHistorypath = history.location.pathname;
+        //console.log("getHistorypath ==>", getHistorypath)
+        this.getActiveId(getHistorypath)
+
+    }
+
 
     render() {
+
         return (
             <>
                 {/* <!-- Modal --> */}
@@ -196,7 +240,7 @@ class Header extends React.Component {
                                     {this.state.links.map(link => {
                                         if (link.isDropdown === false) {
                                             return (
-                                                <li
+                                                <li key={link.id}
                                                     onClick={() => this.handleClick(link.id)}
                                                     className={
                                                         link.className +
