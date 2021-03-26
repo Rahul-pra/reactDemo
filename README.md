@@ -18,16 +18,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 `git config user.name "[name]"`
 `git config user.email "[email]"`
 
-# theme Referance 
+# Theme Referance 
 
 `Demo : https://html.design/preview/?theme=quickcloud`
 `Download : https://html.design`
+`https://bootstrapmade.com/`
 
-# live Preview with React
+# Live Preview with React
 
 `https://app-node-demo-theme-setup-2021.herokuapp.com/`
 
 
-# for multi language 
+# For multi language 
 
 `https://react.i18next.com/latest/using-with-hooks`
