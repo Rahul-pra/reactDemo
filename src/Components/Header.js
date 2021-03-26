@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import history from "../Helper/history";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const loader = document.querySelector('#preloader');
 
@@ -235,6 +236,7 @@ class Header extends React.Component {
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                             </button>
+                            <LanguageSwitcher />
                             <div className="collapse navbar-collapse" id="navbars-host">
                                 <ul className="navbar-nav ml-auto">
                                     {this.state.links.map(link => {

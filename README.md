@@ -26,3 +26,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 # live Preview with React
 
 `https://app-node-demo-theme-setup-2021.herokuapp.com/`
+
+
+# for multi language 
+
+`https://react.i18next.com/latest/using-with-hooks`
