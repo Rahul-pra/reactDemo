@@ -2,7 +2,7 @@
 react demo
 
 # clone repo
-`git clone https://[username]:[password]@github.com/rahul-prajapati2020/reactDemo.git`
+`git clone https://[username]:[password]@github.com/Rahul-pra/reactDemo.git`
 
 # start project
 
